@@ -1,3 +1,4 @@
+flask-cors
 flask
 scikit-learn
 joblib
