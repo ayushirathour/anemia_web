@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins=["https://anemiafastscan.netlify.app/"])  # Only allow your frontend
+CORS(app, origins=["https://bloodwiseai.vercel.app/"])  # Only allow your frontend
 
 # Load your trained model
 model = joblib.load("disease_model (1).joblib")
@@ -53,4 +53,5 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
